@@ -6,6 +6,12 @@ package org.academiadecodigo.calculator;
 public class Brain {
 
 
+    public int getResult (Operation operation, int num1, int num2){
+
+
+
+    }
+
     public int add(int n1, int n2) {
         return n1 + n2;
     }

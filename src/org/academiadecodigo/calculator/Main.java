@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Calculator calc1 = new Calculator();
-
+Operation.showOperations();
         // calc2.sum(); ->> erro que isto vai dar vai ser null pointer exception
 
         Calculator calc2;
