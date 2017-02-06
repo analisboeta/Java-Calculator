@@ -20,7 +20,9 @@ public class Brain {
             case DIVIDE:
 
                 if (n2 == 0) {
-                    result = -1; //erro pode ser assim?
+                    result = -1;
+                    System.err.println("divide by zero error");
+                    System.exit(0);
 
                 } else {
                     result = (n1 / n2);

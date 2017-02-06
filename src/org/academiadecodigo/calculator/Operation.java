@@ -23,7 +23,7 @@ public enum Operation {
 public static String showOperations(){
     String result = "Available Operations: ";
 
-    //Operation.values() returns an array with all the enum values
+    // Operation.values() returns an array with all the enum values
     for(Operation operation : Operation.values()){
         result += operation.symbol + " ";
     }
