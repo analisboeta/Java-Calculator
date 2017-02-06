@@ -5,33 +5,35 @@ package org.academiadecodigo.calculator;
  */
 public class Brain {
 
+    public double calculateResult(Operation operation, double n1, double n2) {
+        double result;
+        switch (operation) {
+            case ADD:
+                result = n1 + n2;
+                break;
+            case SUBTRACT:
+                result = n1 - n2;
+                break;
+            case MULTIPLY:
+                result = n1 * n2;
+                break;
+            case DIVIDE:
 
-    public int getResult (Operation operation, int num1, int num2){
+                if (n2 == 0) {
+                    result = -1; //erro pode ser assim?
 
-
-
-    }
-
-    public int add(int n1, int n2) {
-        return n1 + n2;
-    }
-
-    public int subtract(int n1, int n2) {
-        return n1 - n2;
-    }
-
-    public int multiply(int n1, int n2) {
-        return n1 * n2;
-    }
-
-    public int divide(float n1, int n2) {
-
-        if (n2 == 0) {
-            return -1; //erro pode ser assim?
-
-        } else {
-            return (int) (n1 / n2);
+                } else {
+                    result = (n1 / n2);
+                }
+                result = n1 / n2;
+                break;
+            default:
+                result = 0;
+                System.out.println("Something went wrong...");
+                break;
         }
-
+        return result;
     }
+
+
 }

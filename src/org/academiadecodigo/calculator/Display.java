@@ -5,7 +5,7 @@ package org.academiadecodigo.calculator;
  */
 public class Display {
 
-    public void showResult(int result) {
+    public void showResult(double result) {
         System.out.println(result);
     }
 
